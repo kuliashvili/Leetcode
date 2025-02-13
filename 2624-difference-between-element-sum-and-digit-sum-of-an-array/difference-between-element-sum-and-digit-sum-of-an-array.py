@@ -5,4 +5,4 @@ class Solution:
 
  
 
-        return elementSum - digitSum
+        return abs(elementSum - digitSum )
