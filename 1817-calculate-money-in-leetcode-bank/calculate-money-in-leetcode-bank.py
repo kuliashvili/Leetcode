@@ -1,7 +1,7 @@
 class Solution:
     def totalMoney(self, n: int) -> int:
         countMoney = 0
-        start = 1;
+        start = 1
         weekday = 0
 
         for i in range(n):
@@ -11,5 +11,4 @@ class Solution:
                 start += 1
                 weekday = 0
 
-        return countMoney
-        
+        return countMoney        
