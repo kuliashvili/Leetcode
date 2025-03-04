@@ -3,17 +3,5 @@
  * @return {string}
  */
 var generateTheString = function(n) {
-    let string = ""
-    if(n % 2 !== 0){
-        for(let i = 0; i < n; i++){
-            string += "a"
-        }
-        return string
-    }else{
-        for(let i = 0; i < n -1 ; i++){
-            string += "a"
-        }
-        string += "b"
-        return string
-    } 
+    return "a".repeat(n - 1) + (n % 2 === 0 ? "b" : "a")
 };
