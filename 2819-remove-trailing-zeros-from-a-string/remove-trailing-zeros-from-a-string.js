@@ -7,7 +7,7 @@ var removeTrailingZeros = function(num) {
     
     for(let i = array.length -1; i >= 0; i--){
         if(array[i] != "0"){
-            let answer = num.slice(0, i +1 )
+            let answer = num.slice(0, i + 1)
             return answer
         }
     }
