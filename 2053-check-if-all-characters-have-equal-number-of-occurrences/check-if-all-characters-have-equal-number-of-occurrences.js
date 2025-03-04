@@ -3,13 +3,12 @@
  * @return {boolean}
  */
 var areOccurrencesEqual = function(s) {
-    let dictionary = {}
+    let dict = {}
 
     for(let char of s){
-        dictionary[char] = (dictionary[char] || 0) + 1
+        dict[char] = (dict[char] || 0) + 1
     }
 
-    let values = Object.values(dictionary)
-
+    let values = Object.values(dict)
     return new Set(values).size === 1
 };
